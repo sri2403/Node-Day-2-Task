@@ -22,7 +22,7 @@ app.get("/",(req,res)=>{
     <li><p><strong> /api/roomBooking </strong>: Book a room<p></li>
     <li><p><strong> /api/bookedRoomData </strong>: Retrieve booked room's data<p></li>
     <li><p><strong> /api/customerData </strong>: Retrieve all customer's data<p></li>
-    <li><p><strong> /api/customerCount </strong>: See the customer's room booking count</li></ol><p>
+    <li><p><strong> /api/customerBookingsCount </strong>: See the customer's room booking count</li></ol><p>
 
     </div>`);
     
