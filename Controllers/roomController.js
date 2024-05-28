@@ -72,10 +72,10 @@ export const bookRoom=(req,res)=>{
     const{customer_name,date,start_time,end_time,room_id}=req.body;
     const room=rooms.find(room=>room.room_id==room_id);
     if(!room){
-        res.status(404).send("Room not found")
+        res.status(404).json({message:"Room not found"})
     }
     if(room.room_status!="available"){
-        res.status(400).send("Room is not available")
+        res.status(400).json({message:"Room is not available"})
     }
     const newBooking={
         booking_id:bookings.length+1,
