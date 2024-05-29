@@ -4,11 +4,11 @@ import { bookRoom, bookedCustomerData, bookedRoomData, createRoom, customerDataC
 
 const router=express.Router();
 
-router.use("/allRoomDetails" ,roomDetails);
-router.use("/createRoom",createRoom);
-router.use("/roomBooking",bookRoom);
-router.use("/bookedRoomData",bookedRoomData);
-router.use("/customerData",bookedCustomerData);
-router.use("/customerBookingsCount",customerDataCount);
+router.get("/allRoomDetails" ,roomDetails);
+router.post("/createRoom",createRoom);
+router.post("/roomBooking",bookRoom);
+router.get("/bookedRoomData",bookedRoomData);
+router.get("/customerData",bookedCustomerData);
+router.get("/customerBookingsCount",customerDataCount);
 
 export default router;
